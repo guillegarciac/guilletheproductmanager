@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.mobile-nav {
+  @apply block md:hidden fixed top-10 py-2 w-full h-full bg-gray-900 duration-500;
+} 
+
+nav li a {
+  @apply px-4 py-5 text-lg;
+}
+
+nav li a:hover {
+  color: #7477FF;
+}
+
+/* color */
+.bg-primary {
+  background: #0F172A;
+}
+
+.bg-secondery {
+  background: #1E293B;
+}
+
+.bg-accent {
+  background: #7477FF;
+}
+
+.text-accent {
+  color: #7477FF;
+} 
+
+/* hero */
+h1 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1 !important;
+}
+
+.ml-auto {
+  margin-left: auto;
+  border-radius: 230px;
+}
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  margin: 21px;
 }
